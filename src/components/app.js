@@ -2,11 +2,12 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 
-// import HeaderBar from './header-bar';
-// import LandingPage from './landing-page';
-// import Dashboard from './dashboard';
-// import RegistrationPage from './registration-page';
+import HeaderBar from './header-bar';
+import LandingPage from './landing-page';
+import Dashboard from './dashboard';
+import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
+import PropTypes from 'prop-types';
 
 export class App extends React.Component {
 	componentDidUpdate(prevProps) {
@@ -24,7 +25,7 @@ export class App extends React.Component {
 	startPeriodicRefresh() {
 		this.refreshInterval = setInterval(
 			() => this.props.dispatch(refreshAuthToken()),
-			60 * 60 * 1000 
+			60 * 60 * 1000
 		);
 	}
 
@@ -52,5 +53,10 @@ const mapStateToProps = state => ({
 	hasAuthToken: state.auth.authToken !== null,
 	loggedIn: state.auth.currentUser !== null
 });
+
+App.propTypes = {
+	loggedIn: PropTypes.bool,
+	dispatch: PropTypes.func
+};
 
 export default withRouter(connect(mapStateToProps)(App));
