@@ -6,8 +6,10 @@ import {
 	AUTH_ERROR
 } from '../actions/auth';
 
+import jwtDecode from 'jwt-decode';
+
 const initialState = {
-	authToken: null,
+	authToken: null, 
 	currentUser: null,
 	loading: false,
 	error: null
@@ -16,7 +18,8 @@ const initialState = {
 export default function reducer(state = initialState, action) {
 	if (action.type === SET_AUTH_TOKEN) {
 		return Object.assign({}, state, {
-			authToken: action.authToken
+			authToken: action.authToken,
+			currentUser: jwtDecode(action.authToken).user
 		});
 	} else if (action.type === CLEAR_AUTH) {
 		return Object.assign({}, state, {
