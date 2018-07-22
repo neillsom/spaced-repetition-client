@@ -43,7 +43,7 @@ const storeAuthInfo = (authToken, dispatch) => {
 export const login = (username, password) => dispatch => {
 	dispatch(authRequest());
 	return (
-		fetch(`${API_BASE_URL}/auth/login`, {
+		fetch(`${API_BASE_URL}/api/login`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'
@@ -53,36 +53,36 @@ export const login = (username, password) => dispatch => {
 				password
 			})
 		})
-			.then(res => normalizeResponseErrors(res))
-			.then(res => res.json())
-			.then(({ authToken }) => storeAuthInfo(authToken, dispatch))
-			.catch(err => {
-				const { code } = err;
-				const message =
-					code === 401 ?
-						'Incorrect username or password' :
-						'Unable to login, please try again';
-				dispatch(authError(err));
-				// Could not authenticate, so return a SubmissionError for Redux
-				// Form
-				return Promise.reject(
-					new SubmissionError({
-						_error: message
-					})
-				);
-			})
+		.then(res => normalizeResponseErrors(res))
+		.then(res => res.json())
+		.then(({ authToken }) => {
+			storeAuthInfo(authToken, dispatch)
+		})
+		.catch(err => {
+			const { code } = err;
+			const message =
+				code === 401 ?
+				'Incorrect username or password' :
+				'Unable to login, please try again';
+			dispatch(authError(err));
+			return Promise.reject(
+				new SubmissionError({
+					_error: message
+				})
+			);
+		})
 	);
 };
 
 export const refreshAuthToken = () => (dispatch, getState) => {
 	dispatch(authRequest());
 	const authToken = getState().auth.authToken;
-	return fetch(`${API_BASE_URL}/auth/refresh`, {
-		method: 'POST',
-		headers: {
-			Authorization: `Bearer ${authToken}`
-		}
-	})
+	return fetch(`${API_BASE_URL}/api/refresh`, {
+			method: 'POST',
+			headers: {
+				Authorization: `Bearer ${authToken}`
+			}
+		})
 		.then(res => normalizeResponseErrors(res))
 		.then(res => res.json())
 		.then(({ authToken }) => storeAuthInfo(authToken, dispatch))
