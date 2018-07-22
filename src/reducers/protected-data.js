@@ -2,9 +2,9 @@ import {
 	FETCH_PROTECTED_DATA_SUCCESS,
 	FETCH_PROTECTED_DATA_ERROR,
 	CHECK_ANSWER,
-	RECIEVE_ANSWER,
+	RECEIVE_ANSWER,
 	CLEAR_ANSWER,
-	ADD_REAL_ANSWER
+	ADD_CORRECT_ANSWER
 } from '../actions/protected-data';
 
 const initialState = {
@@ -31,7 +31,7 @@ export default function wordReducer(state = initialState, action) {
 			...state,
 			input: action.input
 		};
-	} else if (action.type === RECIEVE_ANSWER) {
+	} else if (action.type === RECEIVE_ANSWER) {
 		return {
 			...state,
 			result: action.answer
@@ -42,7 +42,7 @@ export default function wordReducer(state = initialState, action) {
 			result: null,
 			answer: null
 		}
-	} else if (action.type === ADD_REAL_ANSWER) {
+	} else if (action.type === ADD_CORRECT_ANSWER) {
 		return {
 			...state,
 			answer: action.word
