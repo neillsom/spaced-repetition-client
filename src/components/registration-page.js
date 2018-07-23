@@ -1,7 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Link, Redirect} from 'react-router-dom';
-import LandingPageDescription from './landing-page-description';
+import LandingPageInfo from './landing-page-info';
 
 import RegistrationForm from './registration-form';
 
@@ -16,7 +16,7 @@ export function RegistrationPage(props) {
 			<h2>Register for Foo App</h2>
 			<RegistrationForm />
 			<Link to="/">Login</Link>
-			<LandingPageDescription />
+			<LandingPageInfo />
 		</div>
 	);
 }
@@ -26,5 +26,3 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps)(RegistrationPage);
-
-//
