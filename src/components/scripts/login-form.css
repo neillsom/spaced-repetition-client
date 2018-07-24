@@ -1,0 +1,6 @@
+.login-button {}
+
+.demo-account {}
+@media all and (max-width: 500px) {
+  .demo-account {}
+}

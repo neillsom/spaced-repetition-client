@@ -1,0 +1,13 @@
+.landing>.loginbox {}
+
+.landing>.loginbox input[type="text"],
+.landing>.loginbox input[type="password"] {}
+
+.signup-button {}
+
+.landing>.infoaboutapp {}
+
+@media all and (max-width: 500px) {
+	.landing>.loginbox {}
+	.landing>.infoaboutapp {}
+}

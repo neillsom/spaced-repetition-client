@@ -67,6 +67,7 @@ export const fetchProtectedData = () => (dispatch, getState) => {
 	})
 		.then(res => normalizeResponseErrors(res))
 		.then(res => res.json())
+		// .then(res => console.log(res.json()))
 		.then(data => dispatch(fetchProtectedDataSuccess(data)))
 		.then(data => console.log(data))
 		.catch(err => {

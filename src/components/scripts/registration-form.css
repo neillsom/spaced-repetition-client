@@ -1,0 +1,10 @@
+.loginbox {}
+
+.loginbox input[type="text"],
+.loginbox input[type="password"] {}
+
+.sign-up {}
+
+@media all and (max-width: 500px) {
+	.sign-up {}
+}

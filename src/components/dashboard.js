@@ -8,7 +8,7 @@ import {
 } from "../actions/protected-data";
 import Question from "./question";
 import Feedback from "./Feedback";
-// import "./dashboard.css";
+import "./scripts/dashboard.css";
 
 export class Dashboard extends React.Component {
   onClickhandler() {
@@ -28,7 +28,7 @@ export class Dashboard extends React.Component {
 	  <div className="dashboard">
 		<div className="dashboard-username">Hello, {this.props.username}</div>
 		<h3 className="dashboard-h3">What is the name of this plant?</h3>
-		{/* <div className="dashboard-name">Name: {this.props.name}</div> */}
+		<h4>The common name is {this.props.colloquial}</h4>
 		<div className="dashboard-protected-data">
 		  {currQuestion ? <Question {...currQuestion} /> : null}
 		  {this.props.answered === false ? null : (
@@ -53,7 +53,8 @@ const mapStateToProps = state => {
 	protectedData: state.protectedData,
 	question: state.protectedData.data.image,
 	feedback: state.protectedData.feedback,
-	answered: state.protectedData.answered
+	answered: state.protectedData.answered,
+	colloquial: state.protectedData.data.colloquial,
   };
 };
 
