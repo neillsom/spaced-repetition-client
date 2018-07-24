@@ -1,7 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
-
 // import './app.css';
 
 import HeaderBar from './header-bar';
@@ -9,7 +8,7 @@ import LandingPage from './landing-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
-import PropTypes from 'prop-types';
+import About from './about-app';
 
 export class App extends React.Component {
 	componentDidUpdate(prevProps) {
@@ -27,7 +26,7 @@ export class App extends React.Component {
 	startPeriodicRefresh() {
 		this.refreshInterval = setInterval(
 			() => this.props.dispatch(refreshAuthToken()),
-			60 * 60 * 1000
+			60 * 60 * 1000 // One hour
 		);
 	}
 
@@ -41,24 +40,24 @@ export class App extends React.Component {
 
 	render() {
 		return (
-			<main className="app">
+			<div className="app">
 				<HeaderBar />
+				{this.props.displayInfo 
+			? <About /> 
+			: ''}
 				<Route exact path="/" component={LandingPage} />
 				<Route exact path="/dashboard" component={Dashboard} />
 				<Route exact path="/register" component={RegistrationPage} />
-			</main>
+				
+			</div>
 		);
 	}
 }
 
 const mapStateToProps = state => ({
 	hasAuthToken: state.auth.authToken !== null,
-	loggedIn: state.auth.currentUser !== null
+	loggedIn: state.auth.currentUser !== null,
+	displayInfo: state.auth.displayInfo
 });
-
-// App.propTypes = {
-// 	loggedIn: PropTypes.bool,
-// 	dispatch: PropTypes.func
-// };
 
 export default withRouter(connect(mapStateToProps)(App));

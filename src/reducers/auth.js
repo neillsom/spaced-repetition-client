@@ -3,23 +3,22 @@ import {
 	CLEAR_AUTH,
 	AUTH_REQUEST,
 	AUTH_SUCCESS,
-	AUTH_ERROR
+	AUTH_ERROR,
+	TOGGLE_INFO
 } from '../actions/auth';
-
-import jwtDecode from 'jwt-decode';
 
 const initialState = {
 	authToken: null, 
 	currentUser: null,
 	loading: false,
-	error: null
+	error: null,
+	displayInfo: false
 };
 
 export default function reducer(state = initialState, action) {
 	if (action.type === SET_AUTH_TOKEN) {
 		return Object.assign({}, state, {
-			authToken: action.authToken,
-			currentUser: jwtDecode(action.authToken).user
+			authToken: action.authToken
 		});
 	} else if (action.type === CLEAR_AUTH) {
 		return Object.assign({}, state, {
@@ -41,6 +40,11 @@ export default function reducer(state = initialState, action) {
 			loading: false,
 			error: action.error
 		});
-	}
+	} else if(action.type === TOGGLE_INFO) {
+		console.log(state.displayInfo)
+		return Object.assign({}, state,  {
+		  displayInfo: !state.displayInfo
+		})
+	  }
 	return state;
 }
