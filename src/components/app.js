@@ -1,14 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
-// import './app.css';
+import "../index.css"
 
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
-import About from './about-app';
+import Guide from './guide';
 
 export class App extends React.Component {
 	componentDidUpdate(prevProps) {
@@ -43,7 +43,7 @@ export class App extends React.Component {
 			<div className="app">
 				<HeaderBar />
 				{this.props.displayInfo 
-			? <About /> 
+			? <Guide /> 
 			: ''}
 				<Route exact path="/" component={LandingPage} />
 				<Route exact path="/dashboard" component={Dashboard} />

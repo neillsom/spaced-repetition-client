@@ -2,7 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { clearAuth, info } from "../actions/auth";
 import { clearAuthToken } from "../local-storage";
-// import "./header-bar.css";
+import "../index.css"
+import "./scripts/header-bar.css";
 
 export class HeaderBar extends React.Component {
 	logOut() {
@@ -23,8 +24,8 @@ export class HeaderBar extends React.Component {
 
 		return (
 			<div className="header-bar">
-				<div className="cookese">
-					<h1 className="cookese">Neill's Spaced Repetition App</h1>
+				<div className="header">
+					<h1 className="header">North American Medicinal Herbs</h1>
 				</div>
 				{logOutButton}
 				<button className="loginButton">
@@ -39,14 +40,14 @@ export class HeaderBar extends React.Component {
 					</a>
 				</button>
 
-				<button className="about">
+				<button className="guide">
 					<a
 						onClick={event => {
 							this.props.dispatch(info(event));
 							console.log("clicked");
 						}}
 					>
-						About
+						Guide
 					</a>
 				</button>
 			</div>

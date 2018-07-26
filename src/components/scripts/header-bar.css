@@ -1,0 +1,32 @@
+.header-bar {
+	margin: 0 auto;
+	padding: 1.5em 0 0 0;
+	line-height: 150%;
+	background-color: #e7e6db;
+	color: #474439;
+	border-bottom: 2px solid #474439;
+}
+
+.header-bar button {
+	background-color: #f3f2ed;
+  margin: 15px 10px;
+  list-style: none;
+  padding: 7px;
+  border-radius: 5px;
+	border: 2px solid rgba(69, 66, 39, 0.5);
+	color: #474439;
+}
+
+.header {
+	font-family: 'Open Sans', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+  color: #474439;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #474439;
+}

@@ -8,6 +8,7 @@ import {
 } from "../actions/protected-data";
 import Question from "./question";
 import Feedback from "./Feedback";
+import "../index.css"
 import "./scripts/dashboard.css";
 
 export class Dashboard extends React.Component {

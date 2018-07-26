@@ -2,8 +2,28 @@
 
 .dashboard-protected-data {}
 
-.dashboard-username {}
+.dashboard-username {
+	padding: 1.1em;
+}
 
-.dashboard-h3 {}
+h4 {
+	margin-bottom: 10px;
+	padding: 5px;
+}
 
-.next {}
+.dashboard-h3 {
+	padding: 5px;
+	font-size: 2em;
+}
+
+.next {
+	box-sizing: border-box;
+	background-color: #db8057;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 60px;
+	padding: 0 5px;
+	margin: 10px 0;
+}

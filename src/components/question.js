@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 // import { FETCH_QUESTION_SUCCESS } from '../actions/question';
 import { postAnswer, toggleAnswered, incrementCountCorrect, incrementCountTotal } from '../actions/protected-data';
+import "../index.css"
 import "./scripts/question.css";
 
 class Question extends Component {
@@ -22,7 +23,9 @@ class Question extends Component {
 	const feedbackData = (this.props.feedback===undefined || this.props.answered===false ) ? null : (
 	<div className="feedbackboard">
 	<p>{this.props.feedback.feedback}. The answer is: {this.props.feedback.answer}</p>
+	<br />
 	<p>You answered correctly {this.props.feedback.correctTries} out of {this.props.feedback.totalTries} guesses for this card</p>
+	<br />
 	<p>You answered correctly {this.props.correctScore} out of {this.props.totalScore} guesses for this session</p>
 	</div>
 	);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
+import "../index.css"
 
 class Feedback extends Component{
 	render(){

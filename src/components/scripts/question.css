@@ -1,10 +1,42 @@
 img {
 	height: 300px;
+	outline: 1px solid #64635533;
 }
 
-.button-submit {}
+.conditional-input-submit {}
 
-.feedback {}
+.button-submit {
+	box-sizing: border-box;
+	background-color: #db8057;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	padding: 0 5px;
+	vertical-align: top;
+	margin: 10px 0;
+}
+
+.userInput {
+	margin: 10px;
+	color: #454227;
+	background-color: #f3f2ed;
+	border: 2px solid #64635533;
+	font-size: 18px;
+	height: 40px;
+	line-height: 38px;
+}
+
+.feedback {
+	display: inline-block;
+	font-family: 'Palatino', 'Palatino Linotype', serif;
+	color: #646355;
+	background-color: rgba(147, 144, 118, 0.25);
+	font-size: 18px;
+	font-style: italic;
+	padding: 0 5px;
+	margin: 10px;
+}
 
 @media only screen and (max-width: 500px) {
 	.feedback {}

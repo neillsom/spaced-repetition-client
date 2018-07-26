@@ -1,0 +1,29 @@
+.close {
+	box-sizing: border-box;
+	background-color: #db8057;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 60px;
+	padding: 0 5px;
+	margin: 10px 0;
+}
+
+.study-group img {
+	height: 200px;
+	padding-bottom: 10px;
+}
+
+
+
+.study-group li {
+	list-style: none;
+	background-color: #f3f2ed;
+	border: 1px solid #454227;
+	border-radius: 15px;
+	padding: 10px;
+	margin: 15px;
+	width: 300px;
+	display: inline-block;
+}

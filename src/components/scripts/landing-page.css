@@ -3,9 +3,32 @@
 .landing>.loginbox input[type="text"],
 .landing>.loginbox input[type="password"] {}
 
-.signup-button {}
+.login-button,
+.signup-button {
+	background-color: #f3f2ed;
+  margin: 15px 10px;
+  list-style: none;
+  padding: 7px;
+  border-radius: 5px;
+	border: 2px solid rgba(69, 66, 39, 0.5);
+	color: #474439;
+	font-size: 14px;
+}
 
-.landing>.infoaboutapp {}
+h2 {
+	margin: 30px 0 20px 0;
+}
+
+.landing {
+	max-width: 500px;
+	margin: 10px auto;
+}
+
+.infoaboutapp>p {
+	margin: 20px;
+	font-family: 'Roboto', sans-serif;
+	color: #474439;
+}
 
 @media all and (max-width: 500px) {
 	.landing>.loginbox {}
