@@ -17,6 +17,12 @@
 	color: #474439;
 }
 
+button.guide {
+	border: none;
+	padding: 0;
+	background-color: #e7e6db;
+}
+
 a:hover {
 	color: #db8057;
 }
