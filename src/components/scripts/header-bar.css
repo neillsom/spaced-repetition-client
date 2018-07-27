@@ -17,6 +17,10 @@
 	color: #474439;
 }
 
+a:hover {
+	color: #db8057;
+}
+
 .header {
 	font-family: 'Open Sans', sans-serif;
 }
