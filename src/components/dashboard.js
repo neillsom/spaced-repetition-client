@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import requiresLogin from "./requires-login";
 import {
   fetchProtectedData,
-  fetchNextQuestion,
+  // fetchNextQuestion,
   toggleAnswered
 } from "../actions/protected-data";
 import Question from "./question";

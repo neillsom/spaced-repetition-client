@@ -3,7 +3,17 @@
 .loginbox input[type="text"],
 .loginbox input[type="password"] {}
 
-.sign-up {}
+.sign-up {
+	box-sizing: border-box;
+	background-color: #db8057;
+	color: #ffffff;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	padding: 0 5px;
+	vertical-align: top;
+	margin: 10px 0;
+}
 
 @media all and (max-width: 500px) {
 	.sign-up {}

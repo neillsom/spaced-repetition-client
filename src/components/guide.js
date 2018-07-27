@@ -19,7 +19,7 @@ function Guide(props) {
                 Close
               </a>
         </button>
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p>Use this guide to learn the scientific latin names.</p>
         <ul className="study-group">
           <li>
             <h3>Eupatorium perfoliatum</h3>

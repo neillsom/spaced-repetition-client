@@ -47,7 +47,7 @@ export class HeaderBar extends React.Component {
 							console.log("clicked");
 						}}
 					>
-						Guide
+						Study Guide
 					</a>
 				</button>
 			</div>
