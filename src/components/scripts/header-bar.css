@@ -40,3 +40,9 @@ a:visited {
   text-decoration: none;
   color: #474439;
 }
+
+@media only screen and (max-width:500px) {
+	h1.header {
+		line-height: 1.1em
+	}
+}

@@ -33,23 +33,27 @@ class Question extends Component {
 	return (
 	 
 		<div className="questionboard">
-		<form onSubmit= {event => {this.onSubmit(event), this.props.dispatch(toggleAnswered())}}>
+			<form onSubmit= {event => {this.onSubmit(event), this.props.dispatch(toggleAnswered())}}>
 
-		<img key={this.props.id} src={this.props.question} alt="medicinal herbs" />
-		{(this.props.answered === true) ? null : 
-		<div className="conditional-input-submit">
-		<input className="userInput"
-			type="text"
-			name="userInput"
-			/>
-		<button className="button-submit">Submit</button>
-		</div>
-		}
+
+			<div className="question-img-container" >
+				<img key={this.props.id} src={this.props.question} alt="medicinal herbs" />
+			</div>
+
+			{(this.props.answered === true) ? null : 
+			<div className="conditional-input-submit">
+				<input className="userInput"
+					type="text"
+					name="userInput"
+				/>
+				<button className="button-submit">Submit</button>
+			</div>
+			}
 		</form>
 		<div className="feedback">
-		{feedbackData}
+			{feedbackData}
 		</div>
-		</div>
+	</div>
 	)
 	}
 }

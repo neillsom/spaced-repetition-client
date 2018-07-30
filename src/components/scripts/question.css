@@ -1,6 +1,12 @@
 .questionboard img {
-	height: 300px;
 	outline: 2px solid #64635533;
+	width: 95%;
+	max-width: 400px;
+	object-fit: cover;
+	overflow: hidden;
+}
+
+div.question-img-container {
 }
 
 .conditional-input-submit {}
@@ -40,4 +46,9 @@
 
 @media only screen and (max-width: 500px) {
 	.feedback {}
+}
+
+@media only screen and (max-width: 500px) {
+	.questionboard img {
+	}
 }
