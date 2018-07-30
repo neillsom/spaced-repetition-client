@@ -29,3 +29,11 @@
 	width: 300px;
 	display: inline-block;
 }
+
+h3 {
+	margin-top: 20px;
+}
+
+h2 {
+	margin: 10px;
+}

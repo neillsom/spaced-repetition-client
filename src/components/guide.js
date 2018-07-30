@@ -97,6 +97,14 @@ function Guide(props) {
             <img src="https://78.media.tumblr.com/47f7a7c912bf7085660451331537a174/tumblr_mhi4mku3bv1rqflawo2_1280.jpg" alt="Blue Cohosh, latin name Caulophyllum thalictroides" />
           </li>
         </ul>
+        <button className="close">
+          <a onClick={event=> {
+                  props.dispatch(info(event));
+                }}
+              >
+                Close
+              </a>
+        </button>
       </div>
    </div>
   );}
