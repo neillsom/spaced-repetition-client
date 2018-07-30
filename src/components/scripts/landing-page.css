@@ -3,6 +3,10 @@
 .landing>.loginbox input[type="text"],
 .landing>.loginbox input[type="password"] {}
 
+form.loginbox {
+	margin-top: 50px;
+}
+
 .login-button,
 .signup-button {
 	background-color: #f3f2ed;
