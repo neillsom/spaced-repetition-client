@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
+import { required, nonEmpty } from "../validators";
 // import { FETCH_QUESTION_SUCCESS } from '../actions/question';
 import { postAnswer, toggleAnswered, incrementCountCorrect, incrementCountTotal } from '../actions/protected-data';
 import "../index.css"
@@ -46,6 +47,8 @@ class Question extends Component {
               <input className="userInput"
                 type="text"
                 name="userInput"
+                validate={[required, nonEmpty]}
+                required
               />
               <button className="button-submit">Submit</button>
             </div>
