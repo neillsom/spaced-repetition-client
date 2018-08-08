@@ -8,7 +8,7 @@ import {
 	TOGGLE_ANSWERED,
 	INCREMENT_COUNT_TOTAL,
 	INCREMENT_COUNT_CORRECT,
-	TOGGLE_INFO
+	// TOGGLE_INFO
 } from "../actions/protected-data";
 
 const initialState = {
@@ -64,13 +64,14 @@ export default function reducer(state = initialState, action) {
 			totalScore: state.totalScore + 1
 		});
 	}
-	// else if(action.type === TOGGLE_INFO) {
-	//		 console.log(state.displayInfo)
-	//		 return Object.assign({}, state,	{
 
-	//			 displayInfo: !state.displayInfo
-	//		 })
-	//	 }
+	// else if(action.type === TOGGLE_INFO) {
+	// 		 console.log(state.displayInfo)
+	// 		 return Object.assign({}, state,	{
+
+	// 			 displayInfo: !state.displayInfo
+	// 		 })
+	// 	 }
 	else if (action.type === INCREMENT_COUNT_CORRECT) {
 		console.log("triggered");
 		return Object.assign({}, state, {

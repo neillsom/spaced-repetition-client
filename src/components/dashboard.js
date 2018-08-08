@@ -7,7 +7,7 @@ import {
   toggleAnswered
 } from "../actions/protected-data";
 import Question from "./question";
-import Feedback from "./Feedback";
+// import Feedback from "./Feedback";
 import "../index.css"
 import "./scripts/dashboard.css";
 
@@ -32,7 +32,7 @@ export class Dashboard extends React.Component {
 		<h4>The common name is {this.props.colloquial}</h4>
 		<div className="dashboard-protected-data">
 		  {currQuestion ? <Question {...currQuestion} /> : null}
-		  {this.props.answered === false ? null : (
+		  {answered === false ? null : (
 			<button
 			  className="next"
 			  onClick={() => this.onClickhandler(fetchProtectedData())}
@@ -53,7 +53,7 @@ const mapStateToProps = state => {
 	name: `${currentUser.firstname} ${currentUser.lastname}`,
 	protectedData: state.protectedData,
 	question: state.protectedData.data.image,
-	feedback: state.protectedData.feedback,
+	// feedback: state.protectedData.feedback,
 	answered: state.protectedData.answered,
 	colloquial: state.protectedData.data.colloquial,
   };

@@ -53,7 +53,7 @@ export const incrementCountCorrect = () => ({
 
 // export const TOGGLE_INFO = 'TOGGLE_INFO'
 // export const info = () => ({
-//		 type: TOGGLE_INFO
+// 		 type: TOGGLE_INFO
 // })
 
 export const fetchProtectedData = () => (dispatch, getState) => {

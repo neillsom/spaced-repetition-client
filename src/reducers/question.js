@@ -11,7 +11,6 @@ const initialState = {
 }
 
 const questionReducer = (state=initialState, action) => {
-	//console.log(action);
 	if (action.type === actions.FETCH_QUESTION_REQUEST) {
 		return Object.assign({}, state, {
 			loading: true,
@@ -29,24 +28,29 @@ const questionReducer = (state=initialState, action) => {
 			loading: false,
 			error: action.error
 		});
-	} else if (action.type === actions.USER_ANSWER_CORRECT) {
-		//console.log("in reducer");
-		//console.log(state);
-		//console.log(action);
-		return Object.assign({}, state, {
-			correct: true,
-			wrong:false,
-			score: state.score + 1,
-			totalscore: state.totalscore + 1,
+	} 
 
-		});
-	} else if (action.type === actions.USER_ANSWER_WRONG) {
-		return Object.assign({}, state, {
-			correct:false,
-			wrong: true,
-			totalscore: state.totalscore + 1
-		});
-	} else if (action.type === actions.FETCH_FEEDBACK_FOR_CORRECT_ANS) {
+	// neill
+	// else if (action.type === actions.USER_ANSWER_CORRECT) {
+	// 	return Object.assign({}, state, {
+	// 		correct: true,
+	// 		wrong:false,
+	// 		score: state.score + 1,
+	// 		totalscore: state.totalscore + 1,
+
+	// 	});
+	// } 
+
+	// neill
+	// else if (action.type === actions.USER_ANSWER_WRONG) {
+	// 	return Object.assign({}, state, {
+	// 		correct:false,
+	// 		wrong: true,
+	// 		totalscore: state.totalscore + 1
+	// 	});
+	// } 
+
+	else if (action.type === actions.FETCH_FEEDBACK_FOR_CORRECT_ANS) {
 		return Object.assign({}, state, {
 			feedback:action.payload,
 			//correctAnswer:`The correct answer is ${state.guess.answer}`

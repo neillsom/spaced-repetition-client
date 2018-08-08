@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import requiresLogin from './requires-login';
 import { required, nonEmpty } from "../validators";
 // import { FETCH_QUESTION_SUCCESS } from '../actions/question';
-import { postAnswer, toggleAnswered, incrementCountCorrect, incrementCountTotal } from '../actions/protected-data';
+import { postAnswer, toggleAnswered /*, incrementCountCorrect, incrementCountTotal */ } from '../actions/protected-data';
 import "../index.css"
 import "./scripts/question.css";
 
@@ -11,7 +11,7 @@ class Question extends Component {
   onSubmit = (event) => {
     event.preventDefault();
 
-    let correctAnswer = this.correctAnswer;
+    // let correctAnswer = this.correctAnswer;
     let userAnswer = event.target.userInput.value.toLowerCase();
     this.props.dispatch(postAnswer({
       answer: userAnswer
@@ -64,7 +64,7 @@ class Question extends Component {
 
 const mapStateToProps = state => ({
   questions: state.questions,
-  correctAnswer: state.correctAnswer,
+  // correctAnswer: state.correctAnswer,
   answered: state.protectedData.answered,
   question: state.protectedData.data.image,
   id: state.protectedData.id,

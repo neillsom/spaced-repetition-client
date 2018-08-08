@@ -35,3 +35,9 @@ html {
 		background: white;
 	}
 }
+
+.form-error {
+	display: block;
+	font-weight: 700;
+	color: #700
+}
