@@ -18,6 +18,7 @@ export function LandingPage(props) {
 			<h2>Learning Through Spaced Repetition</h2>
 			<LoginForm />
 			<div className="signup">
+			<p>Not registered?</p>
 			  <Link to="/register" className="signup-button">Sign up</Link>
 			</div>
 		</div>
@@ -27,7 +28,6 @@ export function LandingPage(props) {
 	  	//	<h4>Username: demouser</h4>
 	  	//	<h4>Password: demouser</h4>
 		}
-	  	<hr />
 	  	<p>Spaced repetition is a method for efficient learning that has you practice concepts or skills over increasing periods of time. </p>
 	  	<p>It's based on the notion of a "forgetting curve," or the idea that over time, if we don't actively use or reflect on something we know, our knowledge decays. </p>
 	  	<p>With spaced repetition, we stay ahead of that moment of forgetting, but we do it in a smart way: if we know something, we don't need to practice it for some period of time. </p>

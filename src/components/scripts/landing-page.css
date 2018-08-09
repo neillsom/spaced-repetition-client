@@ -1,22 +1,5 @@
-.landing>.loginbox {}
-
-.landing>.loginbox input[type="text"],
-.landing>.loginbox input[type="password"] {}
-
-form.loginbox {
-	margin-top: 50px;
-}
-
-.login-button,
-.signup-button {
-	background-color: #f3f2ed;
-  margin: 15px 10px;
-  list-style: none;
-  padding: 7px;
-  border-radius: 5px;
-	border: 2px solid rgba(69, 66, 39, 0.5);
-	color: #474439;
-	font-size: 14px;
+html {
+	background-color: #e7e6db
 }
 
 h2 {

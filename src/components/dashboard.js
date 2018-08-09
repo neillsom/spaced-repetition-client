@@ -28,7 +28,7 @@ export class Dashboard extends React.Component {
 	return (
 	  <div className="dashboard">
 		<div className="dashboard-username">Hello, {this.props.username}</div>
-		<h3 className="dashboard-h3">What is the name of this plant?</h3>
+		<h3 className="dashboard-h3">What is the Latin name for this plant?</h3>
 		<h4>The common name is {this.props.colloquial}</h4>
 		<div className="dashboard-protected-data">
 		  {currQuestion ? <Question {...currQuestion} /> : null}

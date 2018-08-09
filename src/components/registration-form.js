@@ -3,6 +3,7 @@ import { Field, reduxForm, focus } from "redux-form";
 import { registerUser } from "../actions/users";
 import { login } from "../actions/auth";
 import Input from "./input";
+import { Link, Redirect } from "react-router-dom";
 import { required, nonEmpty, matches, length, isTrimmed } from "../validators";
 import "../index.css"
 import "./scripts/registration-form.css";
@@ -57,6 +58,8 @@ export class RegistrationForm extends React.Component {
 				>
 					Sign Up
 				</button>
+				<p>Already registered?</p>
+			  <Link to="/dashboard" className="message-login">Login</Link>
 			</form>
 		);
 	}

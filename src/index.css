@@ -30,14 +30,8 @@ html {
   text-align: center;
 }
 
-@media only screen and (max-width:320px) {
-	.app {
-		background: white;
-	}
-}
-
 .form-error {
+	color: #E85350;
 	display: block;
-	font-weight: 700;
-	color: #700
+	font-size: 12px;
 }

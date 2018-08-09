@@ -18,3 +18,14 @@
 @media all and (max-width: 500px) {
 	.sign-up {}
 }
+
+.message-login {
+	margin: 15px 0 0;
+	color: #db8057;
+	font-size: 12px;
+}
+
+a.message-login {
+	color: #db8057;
+	text-decoration: none;
+}
