@@ -11,13 +11,10 @@ function Guide(props) {
       <div className="content">
         <h3>Study Guide</h3>
         <h2>Medicinal Herbs</h2>
-        <button className="close">
-          <a onClick={event=> {
-                  props.dispatch(info(event));
-                }}
-              >
-                Close
-              </a>
+        <button className="close" onClick={event => {
+          props.dispatch(info(event));
+        }}>
+          <a>Close</a>
         </button>
         <p>Use this guide to learn the scientific latin names.</p>
         <ul className="study-group">
@@ -98,15 +95,16 @@ function Guide(props) {
           </li>
         </ul>
         <button className="close">
-          <a onClick={event=> {
-                  props.dispatch(info(event));
-                }}
-              >
-                Close
+          <a onClick={event => {
+            props.dispatch(info(event));
+          }}
+          >
+            Close
               </a>
         </button>
       </div>
-   </div>
-  );}
+    </div>
+  );
+}
 
 export default connect()(Guide);
