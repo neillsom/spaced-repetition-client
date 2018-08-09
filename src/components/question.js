@@ -5,7 +5,7 @@ import { required, nonEmpty } from "../validators";
 // import { FETCH_QUESTION_SUCCESS } from '../actions/question';
 import { postAnswer, toggleAnswered /*, incrementCountCorrect, incrementCountTotal */ } from '../actions/protected-data';
 import "../index.css"
-import "./scripts/question.css";
+import "./styles/question.css";
 
 class Question extends Component {
   onSubmit = (event) => {

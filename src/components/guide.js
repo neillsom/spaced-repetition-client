@@ -1,6 +1,6 @@
 import React from "react";
 import "../index.css"
-import "./scripts/guide.css";
+import "./styles/guide.css";
 import { connect } from "react-redux";
 import { info } from "../actions/auth";
 
@@ -94,13 +94,12 @@ function Guide(props) {
             <img src="https://78.media.tumblr.com/47f7a7c912bf7085660451331537a174/tumblr_mhi4mku3bv1rqflawo2_1280.jpg" alt="Blue Cohosh, latin name Caulophyllum thalictroides" />
           </li>
         </ul>
-        <button className="close">
-          <a onClick={event => {
-            props.dispatch(info(event));
-          }}
-          >
+        <button className="close" onClick={event => {
+          props.dispatch(info(event));
+        }}>
+          <a>
             Close
-              </a>
+          </a>
         </button>
       </div>
     </div>

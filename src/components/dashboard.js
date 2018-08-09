@@ -9,7 +9,7 @@ import {
 import Question from "./question";
 // import Feedback from "./Feedback";
 import "../index.css"
-import "./scripts/dashboard.css";
+import "./styles/dashboard.css";
 
 export class Dashboard extends React.Component {
   onClickhandler() {

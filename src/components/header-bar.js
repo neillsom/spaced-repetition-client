@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { clearAuth, info } from "../actions/auth";
 import { clearAuthToken } from "../local-storage";
 import "../index.css"
-import "./scripts/header-bar.css";
+import "./styles/header-bar.css";
 
 export class HeaderBar extends React.Component {
   logOut() {
@@ -18,7 +18,7 @@ export class HeaderBar extends React.Component {
       logOutButton = (
         <button className="logout-button" onClick={() => this.logOut()}>
           Logout
-				</button>
+        </button>
       );
     }
 
@@ -28,16 +28,12 @@ export class HeaderBar extends React.Component {
           <h1 className="header">North American Medicinal Herbs</h1>
         </div>
 
-        <button className="loginButton">
-          <a
-            onClick={event => {
-              this.props.dispatch(event);
-              console.log("clicked");
-            }}
-            href="/"
-          >
-            Login
-						</a>
+        <button className="loginButton" onClick={event => {
+          this.props.dispatch(event);
+          console.log("clicked");
+        }}
+          href="/">
+          <a>Login</a>
         </button>
 
 
@@ -47,7 +43,7 @@ export class HeaderBar extends React.Component {
         }}>
           <a>
             Study Guide
-					</a>
+          </a>
         </button>
 
         {logOutButton}

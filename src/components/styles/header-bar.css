@@ -9,9 +9,8 @@
 }
 
 .header-bar button {
-  list-style: none;
-  padding: 7px;
-  border-radius: 5px;
+	padding: 7px;
+	border-radius: 5px;
 	border: 2px solid rgba(69, 66, 39, 0.5);
 	color: #474439;
 }
@@ -20,55 +19,40 @@ button.loginButton {
 	position: absolute;
 	top: 25px;
 	right: 80px;
-	margin: auto;
-	color: #474439;
 }
 
 button.logout-button {
 	position: absolute;
 	top: 25px;
 	right: 20px;
-	margin: auto;
-	color: #474439;
 }
 
 button.guide {
-	/*margin: 15px 10px;*/
-	/*border: none;*/
-	/*background-color:rgba(0, 0, 0, 0);*/
-	/*font-size: 14px;*/
 	position: absolute;
-	right: 135px;
+	right: 134px;
 	top: 25px;
 }
 
-button.loginButton a:hover,
-button.logout-button:hover {
+.loginButton:hover,
+.logout-button:hover,
+.guide:hover {
 	color: #db8057;
-}
-
-.guide a {
-	color: #474439;
-}
-
-.guide a:hover {
-	color: #db8057;
+	cursor: pointer;
 }
 
 .header {
-	font-family: 'Open Sans', sans-serif;
 	font-family: 'Amatic SC', cursive;
 	font-size: 1.7em
 }
 
 a:link {
-  text-decoration: none;
-  color: #474439;
+	text-decoration: none;
+	color: #474439;
 }
 
 a:visited {
-  text-decoration: none;
-  color: #474439;
+	text-decoration: none;
+	color: #474439;
 }
 
 @media only screen and (max-width:500px) {
