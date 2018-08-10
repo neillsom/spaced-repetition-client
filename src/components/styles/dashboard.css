@@ -6,6 +6,7 @@
 
 .dashboard-username {
 	padding: 1.1em;
+	display: none;
 }
 
 h4 {

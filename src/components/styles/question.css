@@ -1,5 +1,5 @@
 .questionboard img {
-	outline: 2px solid #64635533;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	width: 95%;
 	max-width: 400px;
 	object-fit: cover;
@@ -12,41 +12,64 @@ div.question-img-container {
 .conditional-input-submit {}
 
 .button-submit {
+	background-color: #db8057;
+	border-radius: 2px;
+	border: none;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	height: 40px;
+	margin: 20px 5px;
+	padding: 0 5px;
+	vertical-align: top;
+}
+
+.userInput {
+	background-color: #f3f2ed;
+	border: 2px solid #64635533;
+	color: #646355;
+	font-size: 18px;
+	height: 40px;
+	line-height: 38px;
+	margin: 20px 0 0 10px;
+	padding-left: 10px;
+
+}
+
+.userInput[type=value] {
+	color: red;
+	
+}
+
+.feedback {
+	background-color: rgba(147, 144, 118, 0.25);
+	color: #646355;
+	display: inline-block;
+	font-family: 'Palatino', 'Palatino Linotype', serif;
+	font-size: 18px;
+	font-style: italic;
+	margin: 10px;
+	padding: 0 5px;
+}
+
+.next {
 	box-sizing: border-box;
 	background-color: #db8057;
 	color: #ffffff;
 	border: none;
 	border-radius: 2px;
 	height: 40px;
+	width: 60px;
 	padding: 0 5px;
-	vertical-align: top;
 	margin: 10px 0;
+}
+
+.next:hover {
 	cursor: pointer;
 }
 
-.userInput {
-	margin: 10px;
-	color: #454227;
-	background-color: #f3f2ed;
-	border: 2px solid #64635533;
-	font-size: 18px;
-	height: 40px;
-	line-height: 38px;
-}
 
-.feedback {
-	display: inline-block;
-	font-family: 'Palatino', 'Palatino Linotype', serif;
-	color: #646355;
-	background-color: rgba(147, 144, 118, 0.25);
-	font-size: 18px;
-	font-style: italic;
-	padding: 0 5px;
-	margin: 10px;
-}
-
-
-div.feedbackboard p{
+div.feedbackboard p {
 	margin: 5px auto;
 }
 

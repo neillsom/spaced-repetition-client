@@ -1,9 +1,9 @@
 .close {
-	box-sizing: border-box;
 	background-color: #db8057;
+	box-sizing: border-box;
 	color: #ffffff;
 	border: none;
-	border-radius: 2px;
+	border-radius: 5px;
 	height: 40px;
 	width: 60px;
 	padding: 0 5px;
@@ -29,6 +29,10 @@
 	margin: 15px;
 	width: 300px;
 	display: inline-block;
+}
+
+.study-group p {
+	margin-bottom: 7px;
 }
 
 h3 {

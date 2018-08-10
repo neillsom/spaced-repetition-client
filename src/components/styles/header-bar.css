@@ -1,11 +1,14 @@
 .header-bar {
 	margin: 0 auto;
 	padding: 1.5em 0 0 0;
-	line-height: 150%;
 	background-color: #98b880;
-	color: #FFF;
 	border-bottom: 2px solid #d9d8d0;
-	height: 80px;
+}
+
+.header-title {
+	font-family: 'Amatic SC', cursive;
+	font-size: 3em;
+	color: #FFF;
 }
 
 .header-bar button {
@@ -16,21 +19,15 @@
 }
 
 button.loginButton {
-	position: absolute;
-	top: 25px;
-	right: 80px;
+	margin: 10px 5px;
 }
 
 button.logout-button {
-	position: absolute;
-	top: 25px;
-	right: 20px;
+	margin: 10px 5px;
 }
 
 button.guide {
-	position: absolute;
-	right: 134px;
-	top: 25px;
+	margin: 10px 5px;
 }
 
 .loginButton:hover,
@@ -40,23 +37,10 @@ button.guide {
 	cursor: pointer;
 }
 
-.header {
-	font-family: 'Amatic SC', cursive;
-	font-size: 1.7em
-}
-
-a:link {
-	text-decoration: none;
-	color: #474439;
-}
-
-a:visited {
-	text-decoration: none;
-	color: #474439;
-}
-
 @media only screen and (max-width:500px) {
 	h1.header {
 		line-height: 1.1em
 	}
 }
+
+

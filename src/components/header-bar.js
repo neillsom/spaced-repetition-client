@@ -25,17 +25,19 @@ export class HeaderBar extends React.Component {
     return (
       <div className="header-bar">
         <div className="header">
-          <h1 className="header">North American Medicinal Herbs</h1>
+          <h1 className="header-title">North American Medicinal Herbs</h1>
         </div>
 
-        <button className="loginButton" onClick={event => {
-          this.props.dispatch(event);
-          console.log("clicked");
-        }}
-          href="/">
-          <a>Login</a>
-        </button>
-
+        {
+        // <button className="loginButton" onClick={event => {
+        //   // here Neill
+        //   this.props.dispatch(event);
+        // }}
+        //   href="/"
+        // >
+        //   <a>Login</a>
+        // </button>
+        }
 
         <button className="guide" onClick={event => {
           this.props.dispatch(info(event));
