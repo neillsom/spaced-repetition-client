@@ -1,7 +1,9 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
+import "./styles/app.css";
 import "../index.css"
+
 
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
@@ -48,7 +50,11 @@ export class App extends React.Component {
 				<Route exact path="/" component={LandingPage} />
 				<Route exact path="/dashboard" component={Dashboard} />
 				<Route exact path="/register" component={RegistrationPage} />
-				
+				<footer>
+					<div>
+						<p>Neill Somerville 2018</p>
+					</div>
+				</footer>
 			</div>
 		);
 	}
