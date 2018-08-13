@@ -3,12 +3,14 @@
 	padding: 1.5em 0 0 0;
 	background-color: #98b880;
 	border-bottom: 2px solid #d9d8d0;
+	width: 100%;
 }
 
 .header-title {
 	font-family: 'Amatic SC', cursive;
 	font-size: 3em;
 	color: #FFF;
+	width: 95%;
 }
 
 .header-bar button {
@@ -22,11 +24,8 @@ button.loginButton {
 	margin: 10px 5px;
 }
 
+button.guide,
 button.logout-button {
-	margin: 10px 5px;
-}
-
-button.guide {
 	margin: 10px 5px;
 	background-color: #e7e6db;
 	border: 1px solid rgba(69, 66, 39, .5);
@@ -40,7 +39,5 @@ button.guide {
 }
 
 @media only screen and (max-width:500px) {
-	html {
-/*margin: auto;*/
-	}
+	html {}
 }
