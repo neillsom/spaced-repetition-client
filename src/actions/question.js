@@ -19,21 +19,6 @@ export const fetchQuestionError = err => ({
 	err
 });
 
-
-// // neill
-// export const USER_ANSWER_CORRECT = 'USER_ANSWER_CORRECT';
-// const userAnswerCorrect = () => ({
-// // const feedbackForRight = () => ({
-// 	type: USER_ANSWER_CORRECT
-// });
-
-// // neill
-// export const USER_ANSWER_WRONG = 'USER_ANSWER_WRONG';
-// const userAnswerWrong = () => ({
-// // const feedbackForWrong = () => ({
-// 	type: USER_ANSWER_WRONG
-// });
-
 export const FETCH_FEEDBACK_FOR_CORRECT_ANS = 'FETCH_FEEDBACK_FOR_CORRECT_ANS';
 export const fetchFeedbackForCorrectAns = () => ({
 	type: FETCH_FEEDBACK_FOR_CORRECT_ANS,

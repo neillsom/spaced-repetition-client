@@ -3,6 +3,10 @@ import { connect } from "react-redux";
 import { Link, Redirect } from "react-router-dom";
 import "../index.css"
 import "./styles/landing-page.css";
+import { css } from '@emotion/core';
+import { ClipLoader } from 'react-spinners';
+import LoadingSpinner from './LoadingSpinner'
+
 
 import LoginForm from "./login-form";
 
@@ -20,6 +24,7 @@ export function LandingPage(props) {
 			<div className="signup">
 			<p>Not registered?</p>
 			  <Link to="/register" className="signup-button">Sign up</Link>
+			  {props.loading && <LoadingSpinner />}
 			</div>
 		</div>
 	  <div className="infoaboutapp">
@@ -33,7 +38,8 @@ export function LandingPage(props) {
 }
 
 const mapStateToProps = state => ({
-  loggedIn: state.auth.currentUser !== null
+  loggedIn: state.auth.currentUser !== null,
+  loading: state.auth.loading
 });
 
 export default connect(mapStateToProps)(LandingPage);

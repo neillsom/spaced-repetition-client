@@ -2,17 +2,12 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
 import "../index.css"
-
-
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
 import Guide from './guide';
-import { css } from '@emotion/core';
-import { ClipLoader } from 'react-spinners';
-import LoadingSpinner from './LoadingSpinner'
 
 export class App extends React.Component {
 	componentDidUpdate(prevProps) {
@@ -52,7 +47,6 @@ export class App extends React.Component {
 				<Route exact path="/" component={LandingPage} />
 				<Route exact path="/dashboard" component={Dashboard} />
 				<Route exact path="/register" component={RegistrationPage} />
-				<LoadingSpinner />
 			</div>
 		);
 	}

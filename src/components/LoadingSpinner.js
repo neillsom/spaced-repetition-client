@@ -17,7 +17,7 @@ export default class LoadingComponent extends React.Component {
   }
   render() {
     return (
-      <div className='sweet-loading'>
+      <div className='loading-spinner'>
         <ClipLoader
           css={override}
           sizeUnit={"px"}

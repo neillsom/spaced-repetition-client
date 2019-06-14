@@ -18,7 +18,8 @@ export const clearAuth = () => ({
 
 export const AUTH_REQUEST = 'AUTH_REQUEST';
 export const authRequest = () => ({
-	type: AUTH_REQUEST
+	type: AUTH_REQUEST, 
+	loading: true
 });
 
 export const AUTH_SUCCESS = 'AUTH_SUCCESS';
