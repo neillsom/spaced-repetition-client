@@ -64,6 +64,12 @@ button.login-button:hover {
 	cursor: pointer;
 }
 
+button.login-button.disabled,
+button.login-button:disabled {
+	opacity: .65;
+	pointer-events: none
+}
+
 .login-form div {
 	display: inline-block;
 }

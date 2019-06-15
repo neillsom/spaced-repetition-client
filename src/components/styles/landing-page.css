@@ -24,6 +24,8 @@ h4 {
 	font-family: 'Roboto', sans-serif;
 	color: #474439;
 	line-height: 1.5em;
+	text-align: justify;
+	text-align-last: center;
 }
 
 .infoaboutapp h4 {
