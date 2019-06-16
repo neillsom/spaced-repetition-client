@@ -1,8 +1,8 @@
-.dashboard {}
+.dashboard {
+}
 
-
-
-.dashboard-protected-data {}
+.dashboard-protected-data {
+}
 
 .dashboard-username {
 	padding: 1.1em;
@@ -16,7 +16,6 @@ h4 {
 
 .dashboard-h3 {
 	padding: 5px;
-	font-size: 2em;
 }
 
 .next {

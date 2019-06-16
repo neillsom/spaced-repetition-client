@@ -6,7 +6,7 @@ const initialState = {
 	wrong: false,
 	feedback:null,
 	score: 0,
-	totalscore: 0,
+	sessionTotalScore: 0,
 	guess: null
 }
 
@@ -36,7 +36,7 @@ const questionReducer = (state=initialState, action) => {
 	// 		correct: true,
 	// 		wrong:false,
 	// 		score: state.score + 1,
-	// 		totalscore: state.totalscore + 1,
+	// 		sessionTotalScore: state.sessionTotalScore + 1,
 
 	// 	});
 	// } 
@@ -46,7 +46,7 @@ const questionReducer = (state=initialState, action) => {
 	// 	return Object.assign({}, state, {
 	// 		correct:false,
 	// 		wrong: true,
-	// 		totalscore: state.totalscore + 1
+	// 		sessionTotalScore: state.sessionTotalScore + 1
 	// 	});
 	// } 
 

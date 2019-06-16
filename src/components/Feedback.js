@@ -6,7 +6,7 @@ import "../index.css"
 class Feedback extends Component{
 	render(){
 		return (
-			<div className="feedbackboard">
+			<div className="feedback-board">
 			</div>
 		);
 	}
@@ -14,7 +14,7 @@ class Feedback extends Component{
 
 const mapStateToProps = state => ({
 	correctAnswer:state.question.score,
-	totalQuestion:state.question.totalscore,
+	totalQuestion:state.question.sessionTotalScore,
 	feedback: state.protectedData.feedback
 })
 

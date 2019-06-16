@@ -1,15 +1,17 @@
-.questionboard img {
+.question-board img {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 	width: 95%;
 	max-width: 400px;
 	object-fit: cover;
 	overflow: hidden;
+	border-radius: 2px;
 }
 
 div.question-img-container {
 }
 
-.conditional-input-submit {}
+.conditional-input-submit {
+}
 
 .button-submit {
 	background-color: #db8057;
@@ -33,23 +35,10 @@ div.question-img-container {
 	line-height: 38px;
 	margin: 20px 0 0 10px;
 	padding-left: 10px;
-
 }
 
-.userInput[type=value] {
+.userInput[type='value'] {
 	color: red;
-	
-}
-
-.feedback {
-	background-color: rgba(147, 144, 118, 0.25);
-	color: #646355;
-	display: inline-block;
-	font-family: 'Palatino', 'Palatino Linotype', serif;
-	font-size: 18px;
-	font-style: italic;
-	margin: 10px;
-	padding: 0 5px;
 }
 
 .next {
@@ -68,16 +57,32 @@ div.question-img-container {
 	cursor: pointer;
 }
 
+.feedback {
+	background-color: rgba(147, 144, 118, 0.25);
+	color: #646355;
+	display: inline-block;
+	font-family: 'Palatino', 'Palatino Linotype', serif;
+	font-size: 18px;
+	font-style: italic;
+	margin: 10px;
+}
 
-div.feedbackboard p {
+.feedback-board {
+	box-sizing: ;
+	border: 1px solid black;
+	max-width: 400px;
+}
+
+div.feedback-board p {
 	margin: 5px auto;
 }
 
 @media only screen and (max-width: 500px) {
-	.feedback {}
+	.feedback {
+	}
 }
 
 @media only screen and (max-width: 500px) {
-	.questionboard img {
+	.question-board img {
 	}
 }
