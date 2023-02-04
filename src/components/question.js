@@ -26,17 +26,15 @@ class Question extends Component {
 				<div className="feedback-board">
 					<p>
 						{this.props.feedback.feedback} The answer is:{' '}
-						{this.props.feedback.answer}
+						<span className='feedback-answer-name'>{this.props.feedback.answer}</span>
 					</p>
-					<br />
 					<p>
 						You answered correctly {this.props.feedback.score} out of{' '}
-						{this.props.feedback.total} guesses for this card
+						{this.props.feedback.total} total times
 					</p>
-					<br />
 					<p>
 						You answered correctly {this.props.sessionCorrectScore} out of{' '}
-						{this.props.sessionTotalScore} guesses for this session
+						{this.props.sessionTotalScore} times this session
 					</p>
 				</div>
 			);

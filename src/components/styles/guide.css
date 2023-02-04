@@ -1,3 +1,8 @@
+.guide-container {
+	background: #e7e6db;
+	padding-top: 15px;
+}
+
 .close {
 	background-color: #db8057;
 	box-sizing: border-box;
@@ -36,16 +41,23 @@
 	margin-bottom: 7px;
 }
 
-h3 {
-	margin-top: 20px;
-}
-
-h2 {
-	margin: 10px;
-}
-
 .protip {
-  display: inline-block;
-  margin-top: 5px;
+	display: inline-block;
+	margin-top: 5px;
+	margin-bottom: 10px;
 	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 750px) {
+	.study-group li {
+		width: 275px;
+		margin: 7px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.study-group li {
+		width: 75%;
+		min-width: 250px;
+	}
 }

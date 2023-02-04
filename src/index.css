@@ -8,7 +8,13 @@ html {
 	padding: 0;
 	margin: 0;
 	text-align: center;
-	margin-bottom: 80px;
+}
+
+html,
+body,
+#root,
+.app {
+	background: #e7e6db;
 }
 
 *,
@@ -30,6 +36,7 @@ html {
 	height: 100%;
   width: 100%;
   max-width: 100%;
+	display: inline-block;
 }
 
 .form-error {

@@ -78,7 +78,6 @@ export const fetchProtectedData = () => (dispatch, getState) => {
 // Call this action on submit input answer
 export const postAnswer = answer => (dispatch, getState) => {
 	const authToken = getState().auth.authToken;
-	console.log(`answer:`, answer);
 	dispatch(submitAnswerRequest());
 
 	return fetch(`${API_BASE_URL}/questions`, {

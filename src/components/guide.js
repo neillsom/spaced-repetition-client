@@ -6,18 +6,18 @@ import { info } from '../actions/auth';
 
 function Guide(props) {
 	return (
-		<div className="overlay">
+		<div className="guide-container">
 			<div className="content">
-				<h3>Study Guide</h3>
-				<button
+				{/* <h3>Study Guide</h3> */}
+				{/* <button
 					className="close"
 					onClick={event => {
 						props.dispatch(info(event));
 					}}
 				>
 					<a>Close</a>
-				</button>
-				<p>Use this guide to learn the scientific latin names.</p>
+				</button> */}
+				<h3>Use this guide to learn the scientific latin names.</h3>
 				<span className="protip">
 					ProTip: Press the escape key to toggle the guide.
 				</span>
@@ -55,11 +55,11 @@ function Guide(props) {
 						/>
 					</li>
 					<li>
-						<h3>Echinaceae</h3>
-						<p>Echinaceae</p>
+						<h3>Echinacea</h3>
+						<p>Echinacea</p>
 						<img
 							src="https://c1.staticflickr.com/9/8036/8070800436_608347d2ba_b.jpg"
-							alt="Echinaceae, latin name Echinaceae spp."
+							alt="Echinacea, latin name Echinacea spp."
 						/>
 					</li>
 					<li>

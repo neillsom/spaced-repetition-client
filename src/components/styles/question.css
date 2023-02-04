@@ -1,13 +1,16 @@
 .question-board img {
 	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-	width: 95%;
-	max-width: 400px;
+	width: 100%;
+	max-width: 600px;
+	max-height: 400px;
 	object-fit: cover;
 	overflow: hidden;
 	border-radius: 2px;
 }
 
 div.question-img-container {
+	margin-left: 7px;
+	margin-right: 7px;
 }
 
 .conditional-input-submit {
@@ -35,6 +38,7 @@ div.question-img-container {
 	line-height: 38px;
 	margin: 20px 0 0 10px;
 	padding-left: 10px;
+	width: 230px;
 }
 
 .userInput[type='value'] {
@@ -58,31 +62,36 @@ div.question-img-container {
 }
 
 .feedback {
-	background-color: rgba(147, 144, 118, 0.25);
 	color: #646355;
 	display: inline-block;
 	font-family: 'Palatino', 'Palatino Linotype', serif;
 	font-size: 18px;
 	font-style: italic;
-	margin: 10px;
+	max-width: 600px;
+	width: 100%;
 }
 
 .feedback-board {
-	box-sizing: ;
-	border: 1px solid black;
-	max-width: 400px;
+	background-color: rgba(147, 144, 118, 0.25);
 }
 
 div.feedback-board p {
-	margin: 5px auto;
+	padding: 5px 0;
+	font-size: 0.95em;
 }
 
-@media only screen and (max-width: 500px) {
-	.feedback {
-	}
+div.feedback-board {
+  margin-top: 7px;
+	padding: 5px 0;
 }
 
-@media only screen and (max-width: 500px) {
-	.question-board img {
+.feedback-answer-name {
+	font-weight: 600;
+}
+
+@media (max-width: 500px) {
+	.feedback-answer-name {
+		margin-top: 3px;
+		display: block;
 	}
 }
