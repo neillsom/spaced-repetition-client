@@ -28,7 +28,7 @@ export function LandingPage(props) {
 			</div>
 			<div className="app-info-text">
 				<p>
-					Spaced Repetition is a Node & React application that showcases spaced
+					Name That Plant is a Node & React application that showcases spaced
 					repetition learning through the use of linked list data structure. The
 					site features authentication and JWTs through the Passport and Bcyrpt
 					libraries. A user can create an account, practice learning latin plant

@@ -26,7 +26,9 @@ class Question extends Component {
 				<div className="feedback-board">
 					<p>
 						{this.props.feedback.feedback} The answer is:{' '}
-						<span className='feedback-answer-name'>{this.props.feedback.answer}</span>
+						<span className="feedback-answer-name">
+							{this.props.feedback.answer}
+						</span>
 					</p>
 					<p>
 						You answered correctly {this.props.feedback.score} out of{' '}

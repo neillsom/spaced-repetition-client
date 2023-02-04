@@ -41,20 +41,20 @@ export class HeaderBar extends React.Component {
 		return (
 			<div className="header-bar">
 				<div className="header">
-					<h1 className="header-title">North American Medicinal Herbs</h1>
+					<h1 className="header-title">Name That Plant</h1>
 				</div>
+				<div className="button-container">
+					<button
+						className="guide-button"
+						onClick={event => {
+							this.props.dispatch(info(event));
+						}}
+					>
+						<a>Study Guide</a>
+					</button>
 
-				<button
-					className="guide"
-					onClick={event => {
-						this.props.dispatch(info(event));
-						// console.log('clicked');
-					}}
-				>
-					<a>Study Guide</a>
-				</button>
-
-				{logOutButton}
+					{logOutButton}
+				</div>
 			</div>
 		);
 	}

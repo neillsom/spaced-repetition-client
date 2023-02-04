@@ -8,15 +8,6 @@ function Guide(props) {
 	return (
 		<div className="guide-container">
 			<div className="content">
-				{/* <h3>Study Guide</h3> */}
-				{/* <button
-					className="close"
-					onClick={event => {
-						props.dispatch(info(event));
-					}}
-				>
-					<a>Close</a>
-				</button> */}
 				<h3>Use this guide to learn the scientific latin names.</h3>
 				<span className="protip">
 					ProTip: Press the escape key to toggle the guide.
